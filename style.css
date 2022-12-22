@@ -1,5 +1,5 @@
 body, html{
-    height: 100%; questo attr serve per dare all'img tutto lo spazio della finestra */
+    height: 100%; /* questo attr serve per dare all'img tutto lo spazio della finestra */
 }
 
 /* e comunque quando riduco di molto la finestra, sotto al contenitore-fondo-nero-trasparente resta la pagina bianca, come risolvere?? */
@@ -13,7 +13,7 @@ brutto a seconda della grandezza della finestra */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100%
+    height: 100%;
     /* width: 100%; */
     padding-top: 5%;
 }
