@@ -1,0 +1,117 @@
+body, html{
+    height: 100%; questo attr serve per dare all'img tutto lo spazio della finestra */
+}
+
+/* e comunque quando riduco di molto la finestra, sotto al contenitore-fondo-nero-trasparente resta la pagina bianca, come risolvere?? */
+
+
+/* ho utilizzato questi attributi per far sì che il bg non diventasse 
+brutto a seconda della grandezza della finestra */
+
+ body{
+    background-image: url('img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%
+    /* width: 100%; */
+    padding-top: 5%;
+}
+
+/* questa è la scritta sotto al logo */
+header > h2{
+    color: #00dd00;
+    text-align: center;
+    font-family: 'Unbounded', cursive;
+    margin: auto;
+    /* margin: 10px 0px;  precedentemente avevo messo questo come margin*/
+}
+
+#logo{
+    width: 200px; /* inizialmente avevo messo 30% - non so se sia più giusto un valore assoluto o uno relativo */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/* questo è il fondo nero contenitore */
+.contenitore{
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 15px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+}
+
+/* questo è il menu/nav */
+nav{
+    text-align: center;    
+ }
+
+ /* ho dovuto fare un contenitore in un contenitore per centrare i buttons */
+
+.menu{
+    background-color: #00dd00;
+}
+
+[type="button"]{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* ho dato la regola generale del font (family e color) qui per non essere ridondante */
+/* da qui iniziano le informazioni sui monopattini (section) */
+section{
+    color: white;
+    font-family: 'Unbounded', cursive;
+}
+
+/* aggiunto postumo per dare lo stesso margin a 'monopattino' e 'indirizzo' sempre 
+per non essere ridondante */
+section > *{
+   margin-bottom: 5px; 
+}
+
+div[class^=indirizzo]{
+    font-size: small;
+}
+
+.batteria{
+    font-size: small;
+    margin-bottom: 2px;
+}
+
+/* qui la barra della batteria che mi ha fatto un po' penare xD */
+.percentuale1{
+    width: 40%;
+    border: 10px solid rgb(255, 202, 105);
+    border-radius: 5px;
+}
+
+.percentuale2{
+    width: 60%;
+    border: 10px solid rgb(50, 250, 23);
+    border-radius: 5px;
+}
+
+.percentuale3{
+    width: 20%;
+    border: 10px solid rgb(172, 29, 29);
+    border-radius: 5px;
+}
+
+footer{
+    padding-top: 5%; /* anche qui, è meglio valore assoluto o relativo?*/
+}
+
+/* questo è il suggerimento del maestro xD */
+*{
+    box-sizing: border-box;
+    /* margin: 0;  forse questo non ci serve a 0*/
+}
